@@ -8,12 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="stylesheets/normalize.css">
-        <link href='fonts/streammenow/style.css' rel='stylesheet' type='text/css'>
+        <link href="fonts/streammenow/style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="stylesheets/screen.css">
         <link rel="stylesheet" href="stylesheets/main.css">
         <link rel="stylesheet" href="css/hearts.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/navigation.css">
         <script>
 		var displaySimulatedEmots = true;
 		</script>
@@ -61,8 +62,8 @@
 	                </ul>
 	                <ul class="live">
 	                	<li class="hidden"  style="font-size: 32px; color: #555;"><img src="img/stop_icon.png">Leave !</li>
-	                	<li class="hidden viewer-action" style="font-size: 32px; color: #555;" id="heart"><i class="icon icon-heart"></i> Love</li>
-	                    <li class="hidden viewer-action" style="font-size: 32px; color: #555;" id="star-full"><i class="icon icon-star-full"></i> Star</li>
+	                	<li class="hidden viewer-action" style="font-size: 32px; color: #555;" id="heart"><i class="icon icon-heart"></i> Love <em style="font-size: 0.6em;">(-3)</em></li>
+	                    <li class="hidden viewer-action" style="font-size: 32px; color: #555;" id="star-full"><i class="icon icon-star-full"></i> Star <em style="font-size: 0.6em;">(-1)</em></li>
 	                </ul>
                 </div>
             </div>
@@ -112,5 +113,14 @@
         </script>
         <script type="text/javascript" src="//ec-ns.sascdn.com/diff/251/pages/hackday.js"></script>
         <script type="text/javascript">SmartAdServerAjax(false, 3648, sas_target);</script>
+        <footer>
+			<ul id="navigation">
+				<li><a href="subscribe.html">Subscribe</a></li>
+				<li><a href="mail-viewer.html">Mail Viewer</a></li>
+				<li><a href="mail-streamer.html">Mail Streamer</a></li>
+				<li><a href="index.html">Streamer Screen</a></li>
+				<li><a href="viewer.html" class="active">Viewer Screen</a></li>
+			</ul>
+		</footer>
     </body>
 </html>

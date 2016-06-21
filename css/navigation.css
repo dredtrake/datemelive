@@ -1,0 +1,29 @@
+ul#navigation {
+    padding: 0;
+}
+
+ul#navigation li {
+    display: inline;
+}
+
+ul#navigation li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#navigation li a:hover {
+    background-color: orange;
+}
+
+ul#navigation li a.active {
+    background-color: orange;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
