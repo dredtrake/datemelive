@@ -35,15 +35,18 @@ html {
 		list-style: none;
 		max-width:  200px;
 		li {
-			@include border-radius(5px);
 			display: block;
-			background-color: #8DA100;
 			margin: 0 0 15px;
 			a {
+				@include border-radius(5px);
 				display: block;
 				padding: 5px;
 				color: #FFFFFF;
 				text-decoration: none;
+				background-color: #8DA100;
+				&:hover {
+					background-color:darken(#8DA100, 5%);
+				}
 			}
 		}
 	}
@@ -74,12 +77,18 @@ html {
 				background-color: #8DA100;
 				color: #FFFFFF;
 				padding: 10px;
+				&:hover {
+					background-color:darken(#8DA100, 5%);
+				}
 			}
 		}
 	}
 	&.nl {
 		.logo {
 			margin: -50px 0 0 -50px;
+		}
+		.fa-heart-o, span {
+			color: red;
 		}
 	}
 }
