@@ -28,6 +28,7 @@ body {
 }
 
 .container {
+	@include border-radius(10px);
 	@include box-sizing(border-box);
 	width: 600px;
 	margin: 30px auto;
