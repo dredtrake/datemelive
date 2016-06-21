@@ -90,6 +90,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+
+	.wrap {
+		width: 820px;
+		margin: 0 auto;
+
+		.logo {
+			float: left;
+			padding: 10px;
+		}
+
+		.fa-heart-o, span {
+			color: red;
+		}
+	}
+
+	nav {
+
+		float: right;
+		font-size: 12px;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+
+			li {
+				display: inline-block;
+			}
+
+		}
+	}
+
+}
+
+
+
 #interface {
 	height: 315px;
 	position: relative;

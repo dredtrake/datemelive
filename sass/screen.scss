@@ -8,26 +8,8 @@ body {
 }
 
 html {
-	background: url("../img/Alien_Ink_2560X1600_Abstract_Background_1.jpg");
-}
-
-.logo {
-	position: absolute;
-	font-family: 'Fugaz One', cursive;
-	line-height: 1;
-	.icon-heart {
-	    font-size: 6em;
-    	position: absolute;
-    	color: red;
-    	& + span {
-    		position: absolute;
-    		font-size: 0.9em;
-    		color: white;
-    		top: 30px;
-    		left: 18px;
-    		white-space: nowrap;
-    	}
-	}
+	//background: url("../img/Alien_Ink_2560X1600_Abstract_Background_1.jpg");
+	background: #ecf0f1;
 }
 
 .container {
