@@ -4,7 +4,7 @@ body {
   height: 100%;
   font-family: verdana;
   font-size: 16px;
-  background-color: #689CD2;
+  background: url("../img/Alien_Ink_2560X1600_Abstract_Background_1.jpg");
 }
 
 /* line 11, ../sass/screen.scss */

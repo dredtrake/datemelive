@@ -59,4 +59,13 @@ $(document).ready(function () {
     setTimeout(function(){
         matchAction('#match-3', '.heart');
     }, 32000);
+
+    // define a function to run in the callback
+    window.hackathon_dle_callback = function(data){
+        if (window.utag_data.adblock_status == "block") {
+            console.log('detected AD block!!!!!');
+        } else if (window.utag_data.adblock_status == "allow") {
+            console.log('allowed');
+        }
+    };
 });
