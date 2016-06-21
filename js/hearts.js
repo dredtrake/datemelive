@@ -1,5 +1,9 @@
 $(".viewer-action").on("click", function() {
     var item = $(this).attr('id');
+    iconOnVideo(item);
+});
+
+function iconOnVideo(item){
     var b = Math.floor((Math.random() * 100) + 1);
     var d = ["flowOne", "flowTwo", "flowThree", "flowFour", "flowFive", "flowSix"];
     var a = ["colOne", "colTwo", "colThree", "colFour", "colFive", "colSix"];
@@ -10,5 +14,5 @@ $(".viewer-action").on("click", function() {
     $(".part-" + b).show();
     setTimeout(function() {
         $(".part-" + b).remove()
-    }, c * 900)
-});
+    }, c * 900);
+}

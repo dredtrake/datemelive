@@ -25,6 +25,13 @@ function countdown(elementName, minutes, seconds, callback) {
 
 function matchAction(id, type) {
     $(id).children('.notif').children(type).addClass('checked');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
+    iconOnVideo('heart');
     displayMessage($(id).children('.name').html(), '<span class="icon ' + type.substr(1) + '"></span>');
 }
 
@@ -44,43 +51,43 @@ $(document).ready(function () {
         $(".connections").fadeIn();
     } );
 
-    countdown("fake-count", 0, 7, function () {
+    countdown("fake-count", 0, 6, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
 
-    countdown("fake-count", 0, 9, function () {
+    countdown("fake-count", 0, 8, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
 
-    countdown("fake-count", 0, 12, function () {
+    countdown("fake-count", 0, 10, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
 
-    countdown("fake-count", 0, 12, function () {
+    countdown("fake-count", 0, 11, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
 
-    countdown("fake-count", 0, 30, function () {
+    countdown("fake-count", 0, 20, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
     setTimeout(function(){
         matchAction('#match-2', '.icon-star-full');
-    }, 25000);
+    }, 21000);
     setTimeout(function(){
         matchAction('#match-3', '.icon-heart');
-    }, 32000);
+    }, 26000);
     setTimeout(function(){
        displayMessage('Marie', 'Where do you live?');
     }, 12000);
     setTimeout(function(){
        displayMessage('Marie', 'Do you like the Black Keys?');
-    }, 34000);
+    }, 30000);
     setTimeout(function(){
        displayMessage('Agathe', 'Are you married?');
-    }, 21000);
+    }, 16000);
     setTimeout(function(){
        matchAction('#match-4', '.icon-heart');
-    }, 65000);
+    }, 55000);
     setTimeout(function(){
         $('.hearts').removeClass('hide');
     }, 10000);
