@@ -26,12 +26,12 @@ function countdown(elementName, minutes, seconds, callback) {
 function matchAction(id, type) {
     $(id).children('.notif').children(type).addClass('checked');
     iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
+    setTimeout(function(){iconOnVideo('heart');}, 50);
+    setTimeout(function(){iconOnVideo('heart');}, 250);
+    setTimeout(function(){iconOnVideo('heart');}, 450);
+    setTimeout(function(){iconOnVideo('heart');}, 550);
+    setTimeout(function(){iconOnVideo('heart');}, 750);
+    setTimeout(function(){iconOnVideo('heart');}, 950);
     displayMessage($(id).children('.name').html(), '<span class="icon ' + type.substr(1) + '"></span>');
 }
 
@@ -86,6 +86,9 @@ $(document).ready(function () {
     setTimeout(function(){
        displayMessage('Agathe', 'Are you married?');
     }, 16000);
+    setTimeout(function(){
+       matchAction('#match-1', '.icon-heart');
+    }, 42000);
     setTimeout(function(){
        matchAction('#match-4', '.icon-heart');
     }, 55000);
