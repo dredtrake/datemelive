@@ -28,28 +28,29 @@ html {
 .container h1 {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 2em;
+  line-height: 1.3;
   color: #04376C;
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
 }
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .container p, .container ul {
   font-size: 1.2em;
-  margin: 5px 0 0;
+  margin: 5px 0 10px;
   text-align: center;
 }
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .container .viewer {
   margin: 25px auto;
   list-style: none;
   max-width: 200px;
 }
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 .container .viewer li {
   display: block;
   margin: 0 0 15px;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .container .viewer li a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -60,24 +61,24 @@ html {
   text-decoration: none;
   background-color: #8DA100;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .container .viewer li a:hover {
   background-color: #778800;
 }
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .container .streamer {
   margin: 25px auto;
   list-style: none;
   text-align: right;
 }
-/* line 57, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .container .streamer li {
   display: block;
   margin: 0 0 10px;
   padding: 5px;
   font-size: 0.8em;
 }
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .container .streamer li span,
 .container .streamer li a {
   display: inline-block;
@@ -86,19 +87,19 @@ html {
   *zoom: 1;
   *display: inline;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .container .streamer li img {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   max-width: 100px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .container .streamer li .userName,
 .container .streamer li .view-teaser {
   margin: 0 15px;
 }
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .container .streamer li a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -108,15 +109,15 @@ html {
   color: #FFFFFF;
   padding: 10px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .container .streamer li a:hover {
   background-color: #778800;
 }
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .container.nl .logo {
   margin: -50px 0 0 -50px;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .container.nl .fa-heart-o, .container.nl span {
   color: red;
 }

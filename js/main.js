@@ -38,6 +38,7 @@ function matchAction(id, type) {
 function displayMessage(who, what){
     var d = new Date();
     var h = d.getHours();
+    h = h < 10 ? '0' + h : h; 
     var mn = d.getMinutes();
     mn = mn < 10 ? '0' + mn : mn;
     time = h + ':' + mn;
