@@ -45,6 +45,7 @@ function displayMessage(who, what){
 }
 
 $(document).ready(function () {
+    $('video').children('iframe')
     countdown("countdown", 0, 3, function () {
         $(".left.video").show();
         $("#countdown").hide();
