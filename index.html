@@ -14,6 +14,7 @@
 		<link href='fonts/streammenow/style.css' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="stylesheets/screen.css">
 		<link rel="stylesheet" href="stylesheets/main.css">
+		<link rel="stylesheet" href="css/hearts.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -63,6 +64,7 @@
 				<span>Stream<br>me now !</span>
 			</div>
 			<div id="interface">
+				<div class="hearts"></div>
 				<div id="countdown" class="left"></div>
 				<div class="left video">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/y60wDzZt8yg?autoplay=1" frameborder="0" allowfullscreen></iframe>
@@ -94,13 +96,15 @@
 					<li><span class="time">16:32</span> | <span class="user">test</span>ciao</li>
 					<li><span class="time">16:32</span> | <span class="user">test</span>come stai</li>
 				</ul>
-			</div>
+            	<button id="like-heart">Send a &#9825;</button>
+            </div>
 
 			<div id="fake-count" class="hidden"></div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="js/hearts.js"></script>
 		<script src="js/jquery.countdown.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
