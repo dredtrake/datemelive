@@ -72,9 +72,9 @@ $(document).ready(function () {
 
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
-        if (window.utag_data.adblock_status == "block") {
-            console.log('detected AD block!!!!!');
-        } else if (window.utag_data.adblock_status == "allow") {
+        if (data.properties['5046'] == "block") {
+            $("#block").show();
+        } else if (data.properties['5046'] == "allow") {
             console.log('allowed');
         }
     };
