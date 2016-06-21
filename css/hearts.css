@@ -5,6 +5,9 @@ div.hearts {
     top: 0;
     left: 0;
 }
+div.hearts.hide {
+    display: none;
+}
 div.heart {
     width: 30px;
     height: 30px;

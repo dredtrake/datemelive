@@ -34,7 +34,7 @@ function displayMessage(who, what){
     var mn = d.getMinutes();
     mn = mn < 10 ? '0' + mn : mn;
     time = h + ':' + mn;
-    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span> | ' + what + '</li>');
+    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span>:  | ' + what + '</li>');
 }
 
 $(document).ready(function () {
@@ -69,6 +69,9 @@ $(document).ready(function () {
     setTimeout(function(){
         matchAction('#match-3', '.icon-heart');
     }, 32000);
+    setTimeout(function(){
+        $('.hearts').removeClass('hide');
+    }, 10000);
 
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
