@@ -66,6 +66,7 @@ $(document).ready(function () {
             $("#block").show();
         } else if (data.properties['5046'] == "allow") {
             console.log('allowed');
+            $("#confirm-join-button").click();
         }
     };
 });
