@@ -1,6 +1,19 @@
 $(".viewer-action").on("click", function() {
     var item = $(this).attr('id');
-    iconOnVideo(item);
+    
+    var nbToRemove = (item == 'heart') ? 3 : 1;
+    var nbCredits = parseInt(document.getElementById('remaining-credits').innerText);
+    var newTotal = nbCredits - nbToRemove;
+    
+    if (newTotal < 0) {
+    	newTotal = 0;
+    }
+	document.getElementById('remaining-credits').innerText = newTotal;
+	
+	if (newTotal > 0) {
+		iconOnVideo(item);
+	}
+    
 });
 
 function iconOnVideo(item){
@@ -15,4 +28,9 @@ function iconOnVideo(item){
     setTimeout(function() {
         $(".part-" + b).remove()
     }, c * 900);
+}
+
+
+function removeCredits(nbToRemove) {
+	
 }
