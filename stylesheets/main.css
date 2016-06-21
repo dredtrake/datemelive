@@ -95,9 +95,10 @@ textarea {
   background: #fff;
   text-align: center;
   line-height: 300px;
+  display: none;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 header {
   position: fixed;
   z-index: 10;
@@ -107,42 +108,42 @@ header {
   border-bottom: 1px solid #ccc;
   background: #fff;
 }
-/* line 112, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 header .wrap {
   width: 820px;
   margin: 0 auto;
 }
-/* line 116, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 header .wrap .logo {
   float: left;
   padding: 10px;
 }
-/* line 121, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 header .wrap .fa-heart-o, header .wrap span {
   color: red;
 }
-/* line 126, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 header nav {
   float: right;
   font-size: 12px;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 header nav ul {
   list-style: none;
   margin: 0;
   padding: 10px;
 }
-/* line 136, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 header nav ul li {
   display: inline-block;
 }
 
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
 #interface {
   height: 315px;
   position: relative;
 }
-/* line 150, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 #interface .left {
   float: left;
   width: 560px;
@@ -155,11 +156,11 @@ header nav ul li {
   border-left: 1px solid #95a5a6;
   border-right: 1px solid #95a5a6;
 }
-/* line 161, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 #interface .left.video {
   display: none;
 }
-/* line 165, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 #interface .right {
   width: 225px;
   padding: 10px 10px;
@@ -175,11 +176,11 @@ header nav ul li {
   border-left: 1px solid #95a5a6;
   border-right: 1px solid #95a5a6;
 }
-/* line 179, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 #interface .right ul {
   padding: 0;
 }
-/* line 181, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 #interface .right ul li {
   position: relative;
   list-style: none;
@@ -191,13 +192,13 @@ header nav ul li {
   background: #fff;
   border: 1px solid #bdc3c7;
 }
-/* line 191, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 #interface .right ul li img {
   max-height: 45px;
   width: auto;
   margin: 0 5px 0 0;
 }
-/* line 196, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 #interface .right ul li .notif {
   color: #999999;
   font-size: 0.8em;
@@ -205,43 +206,43 @@ header nav ul li {
   right: 5px;
   top: 3px;
 }
-/* line 202, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 #interface .right ul li .notif span {
   display: block;
   margin-top: 5px;
 }
-/* line 205, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 #interface .right ul li .notif span.checked {
   color: red;
 }
-/* line 213, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 #interface .video video {
   width: 560px;
 }
-/* line 216, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 #interface .live {
   margin-top: 0;
 }
-/* line 219, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #interface .online {
   color: #2ecc71;
 }
-/* line 222, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 #interface .offline {
   color: #e74c3c;
 }
-/* line 225, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #interface .connections {
   margin-bottom: 10px;
   font-size: 12px;
   display: none;
 }
-/* line 229, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 #interface .connections i {
   margin-right: 5px;
 }
 
-/* line 236, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 #countdown {
   text-align: center;
   font-size: 120px;
@@ -249,12 +250,12 @@ header nav ul li {
   line-height: 315px;
 }
 
-/* line 243, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 246, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 #reactions {
   width: 100%;
   min-height: 100px;
@@ -264,13 +265,13 @@ header nav ul li {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 255, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 #reactions #messages {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 259, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
@@ -278,18 +279,18 @@ header nav ul li {
   font-size: 11px;
   background: rgba(255, 255, 255, 0.6);
 }
-/* line 266, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
-/* line 271, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
-/* line 279, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -299,13 +300,13 @@ header nav ul li {
   z-index: 4;
   padding: 0;
 }
-/* line 285, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
-/* line 291, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 .ads {
   margin: 15px auto;
 }
@@ -316,7 +317,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers
  */
-/* line 303, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -325,7 +326,7 @@ header nav ul li {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 312, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -342,7 +343,7 @@ header nav ul li {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 329, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -356,7 +357,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 343, ../sass/main.scss */
+/* line 344, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -372,7 +373,7 @@ header nav ul li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 359, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -381,7 +382,7 @@ header nav ul li {
   /* 2 */
 }
 
-/* line 365, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
