@@ -142,7 +142,7 @@ header nav ul li {
 
 /* line 150, ../sass/main.scss */
 #interface {
-  height: 315px;
+  height: 360px;
   position: relative;
 }
 /* line 153, ../sass/main.scss */
@@ -169,7 +169,7 @@ header nav ul li {
   float: right;
   margin-left: 10px;
   background: rgba(255, 255, 255, 0.6);
-  height: 295px;
+  height: 335px;
   border-bottom: 3px solid #3498db;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -249,7 +249,7 @@ header nav ul li {
   text-align: center;
   font-size: 120px;
   color: #2c3e50;
-  line-height: 315px;
+  line-height: 360px;
 }
 
 /* line 246, ../sass/main.scss */
