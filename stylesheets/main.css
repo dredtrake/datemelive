@@ -224,6 +224,12 @@ header nav ul li {
 /* line 221, ../sass/main.scss */
 #interface .live {
   margin-top: 0;
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   cursor: default;
 }
 /* line 224, ../sass/main.scss */
 #interface .online {
