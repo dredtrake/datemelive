@@ -29,33 +29,6 @@
 
         </script>
 
-		<!-- Anfang generische Funktion für Werbung -->
-        <script type="text/javascript">
-        console.log("%cWelcome to MediaImpact Hackday Demopage!", "background: #f00; color: #fff; display: block; padding: 2px 10px;");
-        var winW = window.innerWidth || window.document.documentElement.clientWidth || window.document.body.clientWidth;
-
-        asmiSetup = {
-            view: ((window.screen && screen.availWidth && (screen.availWidth <= 800)) || winW <= 800) ? "m" : "d",
-            async: false,
-            colorBg: !0,
-            bgClick: !0,
-            stickySky: !0,
-            pageName: "funke",
-            target: ""
-        }
-
-        sas_loadHandler = function(f) {
-            if (!f.hasAd || f.tempName == "blocker") {
-                // do something when no ad will be delivered
-            } else {
-                // do something when ad will be delivered
-            }
-            console.log('AdCall ' + f.id + ' Response Info: ');
-            console.log(f);
-        }
-        </script>
-        <script type="text/javascript" src="//ec-ns.sascdn.com/diff/251/pages/hackday.js"></script>
-
 	</head>
 	<body>
 
@@ -92,12 +65,11 @@
 					</ul>
 				</div>
 			</div>
+
+            <div></div>
+
 			<!-- Anfang AdCall für den Superbanner -->
-            <div class="ads" id="sas_3648">
-                <script type="text/javascript">
-                SmartAdServerAjax(false, 3648, sas_target);
-                </script>
-            </div>
+            <div class="ads" id="sas_3648"></div>
             <!-- Ende AdCall für den Superbanner -->
 
 			<div id="reactions">
@@ -112,5 +84,32 @@
 		<script src="js/jquery.countdown.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
+        <!-- Anfang generische Funktion für Werbung -->
+        <script type="text/javascript">
+        console.log("%cWelcome to MediaImpact Hackday Demopage!", "background: #f00; color: #fff; display: block; padding: 2px 10px;");
+        var winW = window.innerWidth || window.document.documentElement.clientWidth || window.document.body.clientWidth;
+
+        asmiSetup = {
+            view: ((window.screen && screen.availWidth && (screen.availWidth <= 800)) || winW <= 800) ? "m" : "d",
+            async: false,
+            colorBg: !0,
+            bgClick: !0,
+            stickySky: !0,
+            pageName: "funke",
+            target: ""
+        }
+
+        sas_loadHandler = function(f) {
+            if (!f.hasAd || f.tempName == "blocker") {
+                // do something when no ad will be delivered
+            } else {
+                // do something when ad will be delivered
+            }
+            console.log('AdCall ' + f.id + ' Response Info: ');
+            console.log(f);
+        }
+        </script>
+        <script type="text/javascript" src="//ec-ns.sascdn.com/diff/251/pages/hackday.js"></script>
+        <script type="text/javascript">SmartAdServerAjax(false, 3648, sas_target);</script>
 	</body>
 </html>
