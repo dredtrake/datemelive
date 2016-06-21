@@ -23,6 +23,10 @@ function countdown(elementName, minutes, seconds, callback) {
     updateTimer();
 }
 
+function matchAction(id, type) {
+    $(id).children('.notif').children(type).addClass('checked');
+}
+
 $(document).ready(function () {
     countdown("countdown", 0, 3, function () {
         $(".left.video").show();
@@ -49,4 +53,10 @@ $(document).ready(function () {
     countdown("fake-count", 0, 30, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
+    setTimeout(function(){
+        matchAction('#match-2', '.star');
+    }, 25000);
+    setTimeout(function(){
+        matchAction('#match-3', '.heart');
+    }, 32000);
 });
