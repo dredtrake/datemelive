@@ -79,6 +79,9 @@ $(document).ready(function () {
        displayMessage('Agathe', 'Are you married?');
     }, 21000);
     setTimeout(function(){
+       matchAction('#match-4', '.icon-heart');
+    }, 65000);
+    setTimeout(function(){
         $('.hearts').removeClass('hide');
     }, 10000);
 
