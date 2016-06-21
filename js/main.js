@@ -62,10 +62,10 @@ $(document).ready(function () {
 
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
-        // if (window.utag_data.adblock_status == "block") {
-        //     console.log('detected AD block!!!!!');
-        // } else if (window.utag_data.adblock_status == "allow") {
-        //     console.log('allowed');
-        // }
+        if (data.properties['5046'] == "block") {
+            $('#adblock').show();
+        } else if (data.properties['5046'] == "allow") {
+            console.log('allowed');
+        }
     };
 });
