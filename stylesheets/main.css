@@ -206,7 +206,7 @@ textarea {
 #reactions {
   width: 100%;
   min-height: 100px;
-  margin: 35px auto;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.6);
   border-bottom: 3px solid #27ae60;
   -webkit-border-radius: 2px;
@@ -231,13 +231,18 @@ textarea {
   margin: -50px 0 0 -55px;
 }
 
+/* line 216, ../sass/main.scss */
+.ads {
+  margin: 15px auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
-/* line 224, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -246,7 +251,7 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 233, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -263,7 +268,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 250, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -277,7 +282,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 264, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -293,7 +298,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 280, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -302,7 +307,7 @@ textarea {
   /* 2 */
 }
 
-/* line 286, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }

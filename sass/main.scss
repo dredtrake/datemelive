@@ -192,7 +192,7 @@ textarea {
 #reactions {
 	width: 100%;
 	min-height: 100px;
-	margin: 35px auto;
+	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.6);
 	border-bottom: 3px solid #27ae60;
 	-webkit-border-radius: 2px;
@@ -211,6 +211,10 @@ textarea {
 	.logo {
 		margin: -50px 0 0 -55px;
 	}
+}
+
+.ads {
+	margin: 15px auto;
 }
 
 /* ==========================================================================
