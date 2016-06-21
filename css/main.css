@@ -115,6 +115,7 @@ header h2 {
 }
 
 #interface {
+	position: relative;
     height: 315px;
 }
 
