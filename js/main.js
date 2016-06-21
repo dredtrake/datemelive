@@ -25,6 +25,16 @@ function countdown(elementName, minutes, seconds, callback) {
 
 function matchAction(id, type) {
     $(id).children('.notif').children(type).addClass('checked');
+    displayMessage($(id).children('.name').html(), '<span class="icon ' + type.substr(1) + '"></span>');
+}
+
+function displayMessage(who, what){
+    var d = new Date();
+    var h = d.getHours();
+    var mn = d.getMinutes();
+    mn = mn < 10 ? '0' + mn : mn;
+    time = h + ':' + mn;
+    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span>: ' + what + '</li>');
 }
 
 $(document).ready(function () {
@@ -54,18 +64,34 @@ $(document).ready(function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
     setTimeout(function(){
-        matchAction('#match-2', '.star');
+        matchAction('#match-2', '.icon-star-full');
     }, 25000);
     setTimeout(function(){
-        matchAction('#match-3', '.heart');
+        matchAction('#match-3', '.icon-heart');
     }, 32000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Where do you live?');
+    }, 12000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Do you like the Black Keys?');
+    }, 34000);
+    setTimeout(function(){
+       displayMessage('Agathe', 'Are you married?');
+    }, 21000);
+    setTimeout(function(){
+       matchAction('#match-4', '.icon-heart');
+    }, 65000);
+    setTimeout(function(){
+        $('.hearts').removeClass('hide');
+    }, 10000);
 
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
-        // if (window.utag_data.adblock_status == "block") {
-        //     console.log('detected AD block!!!!!');
-        // } else if (window.utag_data.adblock_status == "allow") {
-        //     console.log('allowed');
-        // }
+        if (data.properties['5046'] == "block") {
+            $("#block").show();
+        } else if (data.properties['5046'] == "allow") {
+            console.log('allowed');
+            $("#confirm-join-button").click();
+        }
     };
 });

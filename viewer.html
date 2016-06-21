@@ -10,8 +10,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="stylesheets/normalize.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -19,14 +19,21 @@
     <body>
 
         <header>
-            <h2>Stream me now!</h2>
+            <div class="wrap">
+                <div class="logo"><i class="fa fa-heart-o" aria-hidden="true"></i> Stream<span>Me</span>Now!</div>
+                <nav>
+                    <ul>
+                        <li>test@gmail.com</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <div id="main">
             <div id="interface">
                 <div id="countdown" class="left"></div>
                 <div class="left video">
-                    <iframe width="560" height="315" src="http://www.ustream.tv/embed/4777239?html5ui" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+                    <iframe width="560" height="315" src="https://apprtc.appspot.com/r/489020660" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
                 </div>
                 <div class="right">
                     <div class="connections"><i class="fa fa-video-camera" aria-hidden="true"></i> you are live!</div>

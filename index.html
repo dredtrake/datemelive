@@ -58,25 +58,37 @@
 
 	</head>
 	<body>
+
+        <div id="block">
+            Adblock detected. Disable the plugin to access the site!
+        </div>
+
+        <header>
+            <div class="wrap">
+                <div class="logo"><i class="fa fa-heart-o" aria-hidden="true"></i> Stream<span>Me</span>Now!</div>
+                <nav>
+                    <ul>
+                        <li>test@gmail.com</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
 		<div id="main">
-			<div class="logo">
-				<span class="icon-heart"></span>
-				<span>Stream<br>me now !</span>
-			</div>
 			<div id="interface">
-				<div class="hearts"></div>
+				<div class="hearts hide"></div>
 				<div id="countdown" class="left"></div>
 				<div class="left video">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/y60wDzZt8yg?autoplay=1" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="350" src="https://apprtc.appspot.com/r/489020660" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div class="right">
 					<div class="connections"><i class="fa fa-video-camera" aria-hidden="true"></i> you are live!</div>
 					<ul class="live">
-						<li id="match-1" class="hidden"><img src="img/lady-1.jpg" alt="">Marie <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-2" class="hidden"><img src="img/lady-2.jpg" alt="">Gullia <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-3" class="hidden"><img src="img/lady-3.jpg" alt="">Agatha <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-4" class="hidden"><img src="img/lady-4.jpg" alt="">Anne <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-5" class="hidden"><img src="img/lady-5.jpg" alt="">Pupu <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-1" class="hidden"><img src="img/lady-1.jpg" alt=""><span class="name">Marie</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-2" class="hidden"><img src="img/lady-2.jpg" alt=""><span class="name">Gullia</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-3" class="hidden"><img src="img/lady-3.jpg" alt=""><span class="name">Agatha</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-4" class="hidden"><img src="img/lady-4.jpg" alt=""><span class="name">Anne</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-5" class="hidden"><img src="img/lady-5.jpg" alt=""><span class="name">Pupu</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
 					</ul>
 				</div>
 			</div>
@@ -91,17 +103,12 @@
 			<div id="reactions">
             	<button id="heart" class="viewer-action">Send a <i class="icon icon-heart"></i></button>
             	<button id="star-full" class="viewer-action">Send a <i class="icon icon-star-full"></i></button>
-				<ul id="messages">
-					<li><span class="time">16:32</span> | <span class="user">test</span>hello</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>hi</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>ciao</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>come stai</li>
-				</ul>
+				<ul id="messages"></ul>
             </div>
 
 			<div id="fake-count" class="hidden"></div>
 		</div>
-
+		<video id="gum-local" autoplay></video>
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 		<script src="js/hearts.js"></script>

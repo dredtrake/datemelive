@@ -90,8 +90,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#block {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background: #fff;
+	text-align: center;
+	line-height: 300px;
+	display: none;
+	top: 0;
+	left: 0;
+}
+
+header {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	background: #fff;
+
+	.wrap {
+		width: 820px;
+		margin: 0 auto;
+
+		.logo {
+			float: left;
+			padding: 10px;
+		}
+
+		.fa-heart-o, span {
+			color: red;
+		}
+	}
+
+	nav {
+
+		float: right;
+		font-size: 12px;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+
+			li {
+				display: inline-block;
+			}
+
+		}
+	}
+
+}
+
+
+
 #interface {
-	height: 315px;
+	height: 355px;
 	position: relative;
 	.left {
 		float: left;
@@ -114,7 +171,7 @@ textarea {
 		float: right;
 		margin-left: 10px;
 		background: rgba(255, 255, 255, 0.6);
-		height: 295px;
+		height: 330px;
 		border-bottom: 3px solid #3498db;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
@@ -140,7 +197,7 @@ textarea {
 					margin: 0 5px 0 0;
 				}
 				.notif {
-					color: #999999;
+					color: #AAAAAA;
 					font-size: 0.8em;
 					position: absolute;
 					right: 5px;
@@ -156,6 +213,7 @@ textarea {
 			}
 		}
 	}
+	
 	.video video {
 		width: 560px;
 	}
@@ -183,7 +241,7 @@ textarea {
 	text-align: center;
 	font-size: 120px;
 	color: #2c3e50;
-	line-height: 315px;
+	line-height: 355px;
 }
 
 .hidden {
@@ -202,18 +260,19 @@ textarea {
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		min-height: 150px;
+		max-height: 250px;
+		overflow: auto;
+		background: rgba(255, 255, 255, 0.6);
 		li {
 			border-left: 2px solid #3498db;
 			margin-bottom: 2px;
 			padding: 2px;
 			font-size: 11px;
-			background: rgba(255, 255, 255, 0.6);
-
 			span {
 				font-style: italic;
 				font-size: 12px;
 			}
-
 			span.user {
 				margin-right: 5px;
 				font-style: normal;

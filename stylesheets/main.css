@@ -87,11 +87,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* line 93, ../sass/main.scss */
+#block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: #fff;
+  text-align: center;
+  line-height: 300px;
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+/* line 106, ../sass/main.scss */
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+/* line 115, ../sass/main.scss */
+header .wrap {
+  width: 820px;
+  margin: 0 auto;
+}
+/* line 119, ../sass/main.scss */
+header .wrap .logo {
+  float: left;
+  padding: 10px;
+}
+/* line 124, ../sass/main.scss */
+header .wrap .fa-heart-o, header .wrap span {
+  color: red;
+}
+/* line 129, ../sass/main.scss */
+header nav {
+  float: right;
+  font-size: 12px;
+}
+/* line 134, ../sass/main.scss */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+/* line 139, ../sass/main.scss */
+header nav ul li {
+  display: inline-block;
+}
+
+/* line 150, ../sass/main.scss */
 #interface {
-  height: 315px;
+  height: 355px;
   position: relative;
 }
-/* line 96, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 #interface .left {
   float: left;
   width: 560px;
@@ -104,18 +158,18 @@ textarea {
   border-left: 1px solid #95a5a6;
   border-right: 1px solid #95a5a6;
 }
-/* line 107, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #interface .left.video {
   display: none;
 }
-/* line 111, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 #interface .right {
   width: 225px;
   padding: 10px 10px;
   float: right;
   margin-left: 10px;
   background: rgba(255, 255, 255, 0.6);
-  height: 295px;
+  height: 330px;
   border-bottom: 3px solid #3498db;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -124,11 +178,11 @@ textarea {
   border-left: 1px solid #95a5a6;
   border-right: 1px solid #95a5a6;
 }
-/* line 125, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 #interface .right ul {
   padding: 0;
 }
-/* line 127, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #interface .right ul li {
   position: relative;
   list-style: none;
@@ -140,70 +194,70 @@ textarea {
   background: #fff;
   border: 1px solid #bdc3c7;
 }
-/* line 137, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 #interface .right ul li img {
   max-height: 45px;
   width: auto;
   margin: 0 5px 0 0;
 }
-/* line 142, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 #interface .right ul li .notif {
-  color: #999999;
+  color: #AAAAAA;
   font-size: 0.8em;
   position: absolute;
   right: 5px;
   top: 3px;
 }
-/* line 148, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 #interface .right ul li .notif span {
   display: block;
   margin-top: 5px;
 }
-/* line 151, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 #interface .right ul li .notif span.checked {
   color: red;
 }
-/* line 159, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 #interface .video video {
   width: 560px;
 }
-/* line 162, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #interface .live {
   margin-top: 0;
 }
-/* line 165, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 #interface .online {
   color: #2ecc71;
 }
-/* line 168, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #interface .offline {
   color: #e74c3c;
 }
-/* line 171, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 #interface .connections {
   margin-bottom: 10px;
   font-size: 12px;
   display: none;
 }
-/* line 175, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 #interface .connections i {
   margin-right: 5px;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 #countdown {
   text-align: center;
   font-size: 120px;
   color: #2c3e50;
-  line-height: 315px;
+  line-height: 355px;
 }
 
-/* line 189, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 192, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 #reactions {
   width: 100%;
   min-height: 100px;
@@ -213,32 +267,35 @@ textarea {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 201, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 #reactions #messages {
   list-style: none;
   padding: 0;
   margin: 0;
+  min-height: 150px;
+  max-height: 250px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
 }
-/* line 205, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
   padding: 2px;
   font-size: 11px;
-  background: rgba(255, 255, 255, 0.6);
 }
-/* line 212, ../sass/main.scss */
+/* line 272, ../sass/main.scss */
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
-/* line 217, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
-/* line 225, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -248,13 +305,13 @@ textarea {
   z-index: 4;
   padding: 0;
 }
-/* line 231, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
-/* line 237, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .ads {
   margin: 15px auto;
 }
@@ -265,7 +322,7 @@ textarea {
 /*
  * Hide visually and from screen readers
  */
-/* line 249, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -274,7 +331,7 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 258, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -291,7 +348,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 275, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -305,7 +362,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 289, ../sass/main.scss */
+/* line 348, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -321,7 +378,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 305, ../sass/main.scss */
+/* line 364, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -330,7 +387,7 @@ textarea {
   /* 2 */
 }
 
-/* line 311, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
