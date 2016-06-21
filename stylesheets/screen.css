@@ -1,0 +1,106 @@
+/* line 2, ../sass/screen.scss */
+html,
+body {
+  height: 100%;
+  font-family: verdana;
+  font-size: 16px;
+}
+
+/* line 9, ../sass/screen.scss */
+body {
+  background-color: #689CD2;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/screen.scss */
+.container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 600px;
+  margin: 2% auto;
+  padding: 25px;
+  min-height: 96%;
+  background-color: #FFFFFF;
+}
+/* line 22, ../sass/screen.scss */
+.container h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 2em;
+  color: #04376C;
+  text-align: center;
+  margin: 0;
+}
+/* line 29, ../sass/screen.scss */
+.container p, .container ul {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+  text-align: center;
+}
+/* line 34, ../sass/screen.scss */
+.container .viewer {
+  margin: 25px auto;
+  list-style: none;
+  max-width: 200px;
+}
+/* line 38, ../sass/screen.scss */
+.container .viewer li {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  background-color: #8DA100;
+  margin: 0 0 15px;
+  padding: 5px;
+}
+/* line 44, ../sass/screen.scss */
+.container .viewer li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 50, ../sass/screen.scss */
+.container .streamer {
+  margin: 25px auto;
+  list-style: none;
+}
+/* line 53, ../sass/screen.scss */
+.container .streamer li {
+  display: block;
+  margin: 0 0 10px;
+  padding: 5px;
+}
+/* line 57, ../sass/screen.scss */
+.container .streamer li span,
+.container .streamer li a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 61, ../sass/screen.scss */
+.container .streamer li a {
+  text-decoration: none;
+}
+/* line 64, ../sass/screen.scss */
+.container .streamer li img {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  max-width: 100px;
+}
+/* line 68, ../sass/screen.scss */
+.container .streamer li .userName,
+.container .streamer li .view-teaser {
+  margin: 0 15px;
+}
+/* line 72, ../sass/screen.scss */
+.container .streamer li a {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #8DA100;
+  color: #FFFFFF;
+  padding: 5px;
+}
