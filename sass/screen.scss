@@ -1,15 +1,30 @@
 @import "compass/css3";
+
 html,
 body {
 	height: 100%;
 	font-family: verdana;
 	font-size: 16px;
+	background-color: #689CD2;
 }
 
-body {
-	background-color: #689CD2;
-	margin: 0;
-	padding: 0;
+.logo {
+	position: absolute;
+	font-family: 'Fugaz One', cursive;
+	line-height: 1;
+	.icon-heart {
+	    font-size: 5.5em;
+    	position: absolute;
+    	color: red;
+    	& + span {
+    		position: absolute;
+    		font-size: 0.9em;
+    		color: white;
+    		top: 25px;
+    		left: 14px;
+    		white-space: nowrap;
+    	}
+	}
 }
 
 .container {
@@ -24,7 +39,7 @@ body {
 		font-size: 2em;
 		color: #04376C;
 		text-align: center;
-		margin: 0
+		margin: 30px 0 0;
 	}
 	p, ul {
 		font-size: 1.2em;
@@ -50,16 +65,15 @@ body {
 	.streamer {
 		margin: 25px auto;
 		list-style: none;
+		text-align: right;
 		li {
 			display: block;
 			margin: 0 0 10px;
 			padding: 5px;
+			font-size: 0.8em;
 			span, 
 			a {
 				@include inline-block(middle);
-			}
-			a {
-				text-decoration: none;
 			}
 			img {
 				@include border-radius(50px);
@@ -71,6 +85,7 @@ body {
 			}
 			a {
 				@include border-radius(5px);
+				text-decoration: none;
 				background-color: #8DA100;
 				color: #FFFFFF;
 				padding: 5px;
