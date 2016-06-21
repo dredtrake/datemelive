@@ -272,27 +272,46 @@ header nav ul li {
   list-style: none;
   padding: 0;
   margin: 0;
+  min-height: 150px;
+  max-height: 250px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
 }
+<<<<<<< HEAD
+/* line 209, ../sass/main.scss */
+=======
 /* line 262, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
   padding: 2px;
   font-size: 11px;
-  background: rgba(255, 255, 255, 0.6);
 }
+<<<<<<< HEAD
+/* line 214, ../sass/main.scss */
+=======
 /* line 269, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
+<<<<<<< HEAD
+/* line 218, ../sass/main.scss */
+=======
 /* line 274, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
+<<<<<<< HEAD
+/* line 226, ../sass/main.scss */
+=======
 /* line 282, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -302,13 +321,21 @@ header nav ul li {
   z-index: 4;
   padding: 0;
 }
+<<<<<<< HEAD
+/* line 232, ../sass/main.scss */
+=======
 /* line 288, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
+<<<<<<< HEAD
+/* line 238, ../sass/main.scss */
+=======
 /* line 294, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .ads {
   margin: 15px auto;
 }
@@ -319,7 +346,11 @@ header nav ul li {
 /*
  * Hide visually and from screen readers
  */
+<<<<<<< HEAD
+/* line 250, ../sass/main.scss */
+=======
 /* line 306, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .hidden {
   display: none !important;
 }
@@ -328,7 +359,11 @@ header nav ul li {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
+<<<<<<< HEAD
+/* line 259, ../sass/main.scss */
+=======
 /* line 315, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -345,7 +380,11 @@ header nav ul li {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
+<<<<<<< HEAD
+/* line 276, ../sass/main.scss */
+=======
 /* line 332, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -359,7 +398,11 @@ header nav ul li {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
+<<<<<<< HEAD
+/* line 290, ../sass/main.scss */
+=======
 /* line 346, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .invisible {
   visibility: hidden;
 }
@@ -375,7 +418,11 @@ header nav ul li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+<<<<<<< HEAD
+/* line 306, ../sass/main.scss */
+=======
 /* line 362, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -384,7 +431,11 @@ header nav ul li {
   /* 2 */
 }
 
+<<<<<<< HEAD
+/* line 312, ../sass/main.scss */
+=======
 /* line 368, ../sass/main.scss */
+>>>>>>> f7e14f78580124dd6b3421bc46baf217eb75d26f
 .clearfix:after {
   clear: both;
 }

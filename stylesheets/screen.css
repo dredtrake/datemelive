@@ -64,7 +64,7 @@ html {
 .container .streamer {
   margin: 25px auto;
   list-style: none;
-  text-align: right;
+  text-align: left;
 }
 /* line 54, ../sass/screen.scss */
 .container .streamer li {

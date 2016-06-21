@@ -25,6 +25,16 @@ function countdown(elementName, minutes, seconds, callback) {
 
 function matchAction(id, type) {
     $(id).children('.notif').children(type).addClass('checked');
+    displayMessage($(id).children('.name').html(), '<span class="icon ' + type.substr(1) + '"></span>');
+}
+
+function displayMessage(who, what){
+    var d = new Date();
+    var h = d.getHours();
+    var mn = d.getMinutes();
+    mn = mn < 10 ? '0' + mn : mn;
+    time = h + ':' + mn;
+    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span> | ' + what + '</li>');
 }
 
 $(document).ready(function () {
@@ -54,10 +64,10 @@ $(document).ready(function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
     setTimeout(function(){
-        matchAction('#match-2', '.star');
+        matchAction('#match-2', '.icon-star-full');
     }, 25000);
     setTimeout(function(){
-        matchAction('#match-3', '.heart');
+        matchAction('#match-3', '.icon-heart');
     }, 32000);
 
     // define a function to run in the callback
