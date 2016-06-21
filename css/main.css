@@ -179,6 +179,12 @@ header h2 {
     border: 1px solid #bdc3c7;
 }
 
+#interface .live li img {
+	max-width: 40px;
+	max-height: 40px;
+	margin-right: 10px;
+}
+
 #interface .online {
     color: #2ecc71;
 }
