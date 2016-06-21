@@ -264,13 +264,14 @@ header nav ul li {
 /* line 255, ../sass/main.scss */
 #reactions {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   border-bottom: 3px solid #f1c40f;
+  border-top: 3px solid #f1c40f;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 263, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 #reactions button {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -278,14 +279,13 @@ header nav ul li {
   border: 1px solid #AAAAAA;
   background: #ecf0f1;
 }
-/* line 271, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 #reactions button:hover {
   cursor: pointer;
   background: #fff;
 }
-/* line 276, ../sass/main.scss */
+/* line 278, ../sass/main.scss */
 #reactions #messages {
-  margin: 10px 0 0 0;
   list-style: none;
   padding: 0;
   overflow: auto;
@@ -293,25 +293,25 @@ header nav ul li {
   min-height: 150px;
   max-height: 250px;
 }
-/* line 284, ../sass/main.scss */
+/* line 285, ../sass/main.scss */
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
   padding: 2px;
   font-size: 11px;
 }
-/* line 289, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
-/* line 293, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
-/* line 301, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -321,13 +321,13 @@ header nav ul li {
   z-index: 4;
   padding: 0;
 }
-/* line 307, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 .ads {
   margin: 15px auto;
 }
@@ -338,7 +338,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers
  */
-/* line 325, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -347,7 +347,7 @@ header nav ul li {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 334, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -364,7 +364,7 @@ header nav ul li {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 351, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -378,7 +378,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 365, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -394,7 +394,7 @@ header nav ul li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 381, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -403,7 +403,7 @@ header nav ul li {
   /* 2 */
 }
 
-/* line 387, ../sass/main.scss */
+/* line 388, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }

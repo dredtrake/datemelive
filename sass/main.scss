@@ -254,11 +254,13 @@ header {
 }
 #reactions {
 	width: 100%;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
 	border-bottom: 3px solid #f1c40f;
+	border-top: 3px solid #f1c40f;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
+
 
 	button {
 		-webkit-border-radius: 2px;
@@ -274,7 +276,6 @@ header {
 	}
 
 	#messages {
-		margin: 10px 0 0 0;
 		list-style: none;
 		padding: 0;
 		overflow: auto;
