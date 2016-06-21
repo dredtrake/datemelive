@@ -72,11 +72,11 @@
 				<div class="right">
 					<div class="connections"><i class="fa fa-video-camera" aria-hidden="true"></i> you are live!</div>
 					<ul class="live">
-						<li id="match-1" class="hidden"><img src="img/lady-1.jpg" alt="">Marie <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-2" class="hidden"><img src="img/lady-2.jpg" alt="">Gullia <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-3" class="hidden"><img src="img/lady-3.jpg" alt="">Agatha <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-4" class="hidden"><img src="img/lady-4.jpg" alt="">Anne <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
-						<li id="match-5" class="hidden"><img src="img/lady-5.jpg" alt="">Pupu <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-1" class="hidden"><img src="img/lady-1.jpg" alt=""><span class="name">Marie</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-2" class="hidden"><img src="img/lady-2.jpg" alt=""><span class="name">Gullia</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-3" class="hidden"><img src="img/lady-3.jpg" alt=""><span class="name">Agatha</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-4" class="hidden"><img src="img/lady-4.jpg" alt=""><span class="name">Anne</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
+						<li id="match-5" class="hidden"><img src="img/lady-5.jpg" alt=""><span class="name">Pupu</span> <span class="notif"><span class="star icon-star-full"></span><span class="heart icon-heart"></span></span></li>
 					</ul>
 				</div>
 			</div>
@@ -92,16 +92,13 @@
             	<button id="heart" class="viewer-action">Send a <i class="icon icon-heart"></i></button>
             	<button id="star-full" class="viewer-action">Send a <i class="icon icon-star-full"></i></button>
 				<ul id="messages">
-					<li><span class="time">16:32</span> | <span class="user">test</span>hello</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>hi</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>ciao</li>
-					<li><span class="time">16:32</span> | <span class="user">test</span>come stai</li>
+					<li>[<span class="time">16:32</span>] <span class="user">test</span> | hello</li>
 				</ul>
             </div>
 
 			<div id="fake-count" class="hidden"></div>
 		</div>
-
+		<video id="gum-local" autoplay></video>
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 		<script src="js/hearts.js"></script>

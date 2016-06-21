@@ -218,27 +218,30 @@ textarea {
   list-style: none;
   padding: 0;
   margin: 0;
+  min-height: 150px;
+  max-height: 250px;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
 }
-/* line 205, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
   padding: 2px;
   font-size: 11px;
-  background: rgba(255, 255, 255, 0.6);
 }
-/* line 212, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
-/* line 217, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
-/* line 225, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -248,13 +251,13 @@ textarea {
   z-index: 4;
   padding: 0;
 }
-/* line 231, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
-/* line 237, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 .ads {
   margin: 15px auto;
 }
@@ -265,7 +268,7 @@ textarea {
 /*
  * Hide visually and from screen readers
  */
-/* line 249, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -274,7 +277,7 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 258, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -291,7 +294,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 275, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -305,7 +308,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 289, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -321,7 +324,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 305, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -330,7 +333,7 @@ textarea {
   /* 2 */
 }
 
-/* line 311, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
