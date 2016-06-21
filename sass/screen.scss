@@ -5,7 +5,10 @@ body {
 	height: 100%;
 	font-family: verdana;
 	font-size: 16px;
-	background-color: #689CD2;
+}
+
+html {
+	background: url("../img/Alien_Ink_2560X1600_Abstract_Background_1.jpg");
 }
 
 .logo {
@@ -28,6 +31,7 @@ body {
 }
 
 .container {
+	@include border-radius(10px);
 	@include box-sizing(border-box);
 	width: 600px;
 	margin: 30px auto;

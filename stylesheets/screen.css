@@ -4,22 +4,26 @@ body {
   height: 100%;
   font-family: verdana;
   font-size: 16px;
-  background-color: #689CD2;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
+html {
+  background: url("../img/Alien_Ink_2560X1600_Abstract_Background_1.jpg");
+}
+
+/* line 14, ../sass/screen.scss */
 .logo {
   position: absolute;
   font-family: 'Fugaz One', cursive;
   line-height: 1;
 }
-/* line 15, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 .logo .icon-heart {
   font-size: 6em;
   position: absolute;
   color: red;
 }
-/* line 19, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .logo .icon-heart + span {
   position: absolute;
   font-size: 0.9em;
@@ -29,8 +33,11 @@ body {
   white-space: nowrap;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .container {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -39,7 +46,7 @@ body {
   padding: 25px;
   background-color: #FFFFFF;
 }
-/* line 36, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .container h1 {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 2em;
@@ -47,19 +54,19 @@ body {
   text-align: center;
   margin: 0;
 }
-/* line 43, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .container p, .container ul {
   font-size: 1.2em;
   margin: 5px 0 0;
   text-align: center;
 }
-/* line 48, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .container .viewer {
   margin: 25px auto;
   list-style: none;
   max-width: 200px;
 }
-/* line 52, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .container .viewer li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -68,27 +75,27 @@ body {
   background-color: #8DA100;
   margin: 0 0 15px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .container .viewer li a {
   display: block;
   padding: 5px;
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 65, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .container .streamer {
   margin: 25px auto;
   list-style: none;
   text-align: right;
 }
-/* line 69, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .container .streamer li {
   display: block;
   margin: 0 0 10px;
   padding: 5px;
   font-size: 0.8em;
 }
-/* line 74, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .container .streamer li span,
 .container .streamer li a {
   display: inline-block;
@@ -97,19 +104,19 @@ body {
   *zoom: 1;
   *display: inline;
 }
-/* line 78, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .container .streamer li img {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   max-width: 100px;
 }
-/* line 82, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .container .streamer li .userName,
 .container .streamer li .view-teaser {
   margin: 0 15px;
 }
-/* line 86, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .container .streamer li a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -119,7 +126,7 @@ body {
   color: #FFFFFF;
   padding: 10px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .container.nl .logo {
   margin: -50px 0 0 -50px;
 }
