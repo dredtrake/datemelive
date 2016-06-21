@@ -34,7 +34,7 @@ function displayMessage(who, what){
     var mn = d.getMinutes();
     mn = mn < 10 ? '0' + mn : mn;
     time = h + ':' + mn;
-    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span>:  | ' + what + '</li>');
+    $('#messages').append('<li>' + '<span class="time">[' + time + ']</span> <span class="user">' + who + '</span>: ' + what + '</li>');
 }
 
 $(document).ready(function () {
@@ -69,6 +69,18 @@ $(document).ready(function () {
     setTimeout(function(){
         matchAction('#match-3', '.icon-heart');
     }, 32000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Where do you live?');
+    }, 12000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Do you like the Black Keys?');
+    }, 34000);
+    setTimeout(function(){
+       displayMessage('Agathe', 'Are you married?');
+    }, 21000);
+    setTimeout(function(){
+       matchAction('#match-4', '.icon-heart');
+    }, 65000);
     setTimeout(function(){
         $('.hearts').removeClass('hide');
     }, 10000);
