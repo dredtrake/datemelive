@@ -26,18 +26,19 @@ function countdown(elementName, minutes, seconds, callback) {
 function matchAction(id, type) {
     $(id).children('.notif').children(type).addClass('checked');
     iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
-    iconOnVideo('heart');
+    setTimeout(function(){iconOnVideo('heart');}, 50);
+    setTimeout(function(){iconOnVideo('heart');}, 250);
+    setTimeout(function(){iconOnVideo('heart');}, 450);
+    setTimeout(function(){iconOnVideo('heart');}, 550);
+    setTimeout(function(){iconOnVideo('heart');}, 750);
+    setTimeout(function(){iconOnVideo('heart');}, 950);
     displayMessage($(id).children('.name').html(), '<span class="icon ' + type.substr(1) + '"></span>');
 }
 
 function displayMessage(who, what){
     var d = new Date();
     var h = d.getHours();
+    h = h < 10 ? '0' + h : h; 
     var mn = d.getMinutes();
     mn = mn < 10 ? '0' + mn : mn;
     time = h + ':' + mn;
@@ -71,30 +72,30 @@ $(document).ready(function () {
     countdown("fake-count", 0, 20, function () {
         $('.live li.hidden').first().fadeIn('slow').removeClass('hidden');
     } );
-    
-    if (displaySimulatedEmots == true) {
-    	setTimeout(function(){
-    		matchAction('#match-2', '.icon-star-full');
-    	}, 21000);
-    	setTimeout(function(){
-    		matchAction('#match-3', '.icon-heart');
-    	}, 26000);
-    	setTimeout(function(){
-    		displayMessage('Marie', 'Where do you live?');
-    	}, 12000);
-    	setTimeout(function(){
-    		displayMessage('Marie', 'Do you like the Black Keys?');
-    	}, 30000);
-    	setTimeout(function(){
-    		displayMessage('Agathe', 'Are you married?');
-    	}, 16000);
-    	setTimeout(function(){
-    		matchAction('#match-4', '.icon-heart');
-    	}, 55000);
-    	setTimeout(function(){
-    		$('.hearts').removeClass('hide');
-    	}, 10000);
-    }
+    setTimeout(function(){
+        matchAction('#match-2', '.icon-star-full');
+    }, 21000);
+    setTimeout(function(){
+        matchAction('#match-3', '.icon-heart');
+    }, 26000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Where do you live?');
+    }, 12000);
+    setTimeout(function(){
+       displayMessage('Marie', 'Do you like the Black Keys?');
+    }, 30000);
+    setTimeout(function(){
+       displayMessage('Agathe', 'Are you married?');
+    }, 16000);
+    setTimeout(function(){
+       matchAction('#match-1', '.icon-heart');
+    }, 42000);
+    setTimeout(function(){
+       matchAction('#match-4', '.icon-heart');
+    }, 55000);
+    setTimeout(function(){
+        $('.hearts').removeClass('hide');
+    }, 10000);
 
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
