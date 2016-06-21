@@ -63,7 +63,7 @@ $(document).ready(function () {
     // define a function to run in the callback
     window.hackathon_dle_callback = function(data){
         if (data.properties['5046'] == "block") {
-            $('#adblock').show();
+            $("#block").show();
         } else if (data.properties['5046'] == "allow") {
             console.log('allowed');
         }
