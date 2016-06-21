@@ -129,6 +129,7 @@ textarea {
 }
 /* line 126, ../sass/main.scss */
 #interface .right ul li {
+  position: relative;
   list-style: none;
   margin: 0 0 3px 0;
   padding: 2px;
@@ -138,40 +139,57 @@ textarea {
   background: #fff;
   border: 1px solid #bdc3c7;
 }
-/* line 135, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 #interface .right ul li img {
   max-height: 45px;
   width: auto;
   margin: 0 5px 0 0;
 }
-/* line 143, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
+#interface .right ul li .notif {
+  color: #999999;
+  font-size: 0.8em;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+/* line 147, ../sass/main.scss */
+#interface .right ul li .notif span {
+  display: block;
+  margin-top: 5px;
+}
+/* line 150, ../sass/main.scss */
+#interface .right ul li .notif span.checked {
+  color: red;
+}
+/* line 158, ../sass/main.scss */
 #interface .video video {
   width: 560px;
 }
-/* line 146, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 #interface .live {
   margin-top: 0;
 }
-/* line 149, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #interface .online {
   color: #2ecc71;
 }
-/* line 152, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 #interface .offline {
   color: #e74c3c;
 }
-/* line 155, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 #interface .connections {
   margin-bottom: 10px;
   font-size: 12px;
   display: none;
 }
-/* line 159, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 #interface .connections i {
   margin-right: 5px;
 }
 
-/* line 166, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 #countdown {
   text-align: center;
   font-size: 120px;
@@ -179,12 +197,12 @@ textarea {
   line-height: 315px;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 177, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 #reactions {
   width: 100%;
   min-height: 100px;
@@ -199,7 +217,7 @@ textarea {
   border-right: 1px solid #95a5a6;
 }
 
-/* line 191, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -208,7 +226,7 @@ textarea {
   margin: 70px auto;
   padding: 0;
 }
-/* line 196, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
 }
@@ -219,7 +237,7 @@ textarea {
 /*
  * Hide visually and from screen readers
  */
-/* line 210, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -228,7 +246,7 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 219, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -245,7 +263,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 236, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -259,7 +277,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 250, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -275,7 +293,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 266, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -284,7 +302,7 @@ textarea {
   /* 2 */
 }
 
-/* line 272, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
