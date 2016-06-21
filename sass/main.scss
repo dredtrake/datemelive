@@ -124,6 +124,7 @@ textarea {
 		ul {
 			padding: 0;
 			li {
+				position: relative;
 				list-style: none;
 				margin: 0 0 3px 0;
 				padding: 2px;
@@ -137,6 +138,20 @@ textarea {
 					width: auto;
 					margin: 0 5px 0 0;
 				}
+				.notif {
+					color: #999999;
+					font-size: 0.8em;
+					position: absolute;
+					right: 5px;
+					top: 3px;
+					span {
+						display: block;
+						margin-top: 5px;
+						&.checked {
+							color: red;
+						}
+					}
+				} 
 			}
 		}
 	}
@@ -197,7 +212,6 @@ textarea {
 		margin: -50px 0 0 -55px;
 	}
 }
-
 
 /* ==========================================================================
    Helper classes
