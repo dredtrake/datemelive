@@ -180,7 +180,25 @@ header {
 		border-top: 1px solid #95a5a6;
 		border-left: 1px solid #95a5a6;
 		border-right: 1px solid #95a5a6;
+
+		.viewer li {
+
+			cursor: pointer;
+
+			img {
+				max-height: 18px;
+			}
+			padding: 10px;
+			font-size: 14px;
+		}
+
 		ul {
+
+			.credits {
+				font-size: 12px;
+				padding: 10px;
+			}
+
 			padding: 0;
 			li {
 				position: relative;

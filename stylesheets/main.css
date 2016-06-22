@@ -178,11 +178,26 @@ header nav ul li {
   border-left: 1px solid #95a5a6;
   border-right: 1px solid #95a5a6;
 }
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
+#interface .right .viewer li {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+}
+/* line 188, ../sass/main.scss */
+#interface .right .viewer li img {
+  max-height: 18px;
+}
+/* line 195, ../sass/main.scss */
 #interface .right ul {
   padding: 0;
 }
-/* line 185, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
+#interface .right ul .credits {
+  font-size: 12px;
+  padding: 10px;
+}
+/* line 203, ../sass/main.scss */
 #interface .right ul li {
   position: relative;
   list-style: none;
@@ -194,13 +209,13 @@ header nav ul li {
   background: #fff;
   border: 1px solid #bdc3c7;
 }
-/* line 195, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 #interface .right ul li img {
   max-height: 45px;
   width: auto;
   margin: 0 5px 0 0;
 }
-/* line 200, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 #interface .right ul li .notif {
   color: #AAAAAA;
   font-size: 0.8em;
@@ -208,66 +223,66 @@ header nav ul li {
   right: 5px;
   top: 3px;
 }
-/* line 206, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 #interface .right ul li .notif span {
   display: block;
   margin-top: 5px;
 }
-/* line 209, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 #interface .right ul li .notif span.checked {
   color: red;
 }
-/* line 218, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 #interface .video video {
   width: 560px;
 }
-/* line 221, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 #interface .live {
   margin-top: 0;
   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   cursor: default;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
-/* line 224, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 #interface .online {
   color: #2ecc71;
 }
-/* line 227, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 #interface .offline {
   color: #e74c3c;
 }
-/* line 230, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 #interface .connections {
   margin-bottom: 10px;
   font-size: 12px;
   display: none;
 }
-/* line 234, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 #interface .connections i {
   margin-right: 5px;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 #countdown {
   text-align: center;
   font-size: 120px;
   color: #2c3e50;
   line-height: 350px;
 }
-/* line 247, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 #countdown .left {
   height: 350px;
 }
 
-/* line 252, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 .hidden {
   display: none;
 }
 
-/* line 255, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 #reactions {
   width: 100%;
   margin: 10px auto 0 auto;
@@ -277,7 +292,7 @@ header nav ul li {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 265, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 #reactions button {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -285,12 +300,12 @@ header nav ul li {
   border: 1px solid #AAAAAA;
   background: #ecf0f1;
 }
-/* line 273, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 #reactions button:hover {
   cursor: pointer;
   background: #fff;
 }
-/* line 278, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 #reactions #messages {
   list-style: none;
   padding: 0;
@@ -299,25 +314,25 @@ header nav ul li {
   min-height: 150px;
   max-height: 250px;
 }
-/* line 285, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 #reactions #messages li {
   border-left: 2px solid #3498db;
   margin-bottom: 2px;
   padding: 2px;
   font-size: 11px;
 }
-/* line 290, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 #reactions #messages li span {
   font-style: italic;
   font-size: 12px;
 }
-/* line 294, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 #reactions #messages li span.user {
   margin-right: 5px;
   font-style: normal;
 }
 
-/* line 302, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 #main {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -327,13 +342,13 @@ header nav ul li {
   z-index: 4;
   padding: 0;
 }
-/* line 308, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 #main .logo {
   margin: -50px 0 0 -55px;
   z-index: 2;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .ads {
   margin: 15px auto;
 }
@@ -344,7 +359,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers
  */
-/* line 326, ../sass/main.scss */
+/* line 350, ../sass/main.scss */
 .hidden {
   display: none !important;
 }
@@ -353,7 +368,7 @@ header nav ul li {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 335, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -370,7 +385,7 @@ header nav ul li {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 352, ../sass/main.scss */
+/* line 376, ../sass/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -384,7 +399,7 @@ header nav ul li {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 366, ../sass/main.scss */
+/* line 390, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -400,7 +415,7 @@ header nav ul li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 382, ../sass/main.scss */
+/* line 406, ../sass/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -409,7 +424,7 @@ header nav ul li {
   /* 2 */
 }
 
-/* line 388, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 .clearfix:after {
   clear: both;
 }
