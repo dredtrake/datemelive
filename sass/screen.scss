@@ -10,7 +10,6 @@ body {
 html {
 	background: #ecf0f1;
 }
-
 .container {
 	@include border-radius(10px);
 	@include box-sizing(border-box);

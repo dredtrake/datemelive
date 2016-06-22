@@ -117,3 +117,18 @@
 	background: #27AE60;
 	color: white;
 }
+
+#msform input[type="radio"] {
+	width: auto;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+#msform label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.radio-group {
+	text-align: left;
+	margin-left: 35px;
+}
